@@ -4,7 +4,8 @@
   "description": "MySQL based Employee Tracker application",
   "main": "index.js",
   "dependencies": {
-    "inquirer": "^7.3.0"
+    "inquirer": "^7.3.0",
+    "mysql": "^2.18.1"
   },
   "devDependencies": {},
   "scripts": {
