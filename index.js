@@ -33,6 +33,27 @@ function start () {
 			]
 		})
 		.then(function (res) {
-			console.log(res);
+            console.log(res.question);
+            switch(res.question){
+                case 'View departments?':
+                    viewDepartment();
+                    break;
+                case 'View roles?':
+                    viewRoles();
+                    break;
+                case 'View employees?':
+                    viewEmployees();
+                    break;
+                default:
+                    connection.end();
+            }
 		});
+}
+
+
+function viewDepartment() {
+    connection.query('SELECT * FROM departments', function(err, data){
+        if (err) throw err;
+        console.table(data);
+    });
 }
