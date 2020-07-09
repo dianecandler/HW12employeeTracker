@@ -1,0 +1,28 @@
+{
+  "name": "hw12employeetracker",
+  "version": "1.0.0",
+  "description": "MySQL based Employee Tracker application",
+  "main": "index.js",
+  "dependencies": {
+    "inquirer": "^7.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dianecandler/HW12employeeTracker.git"
+  },
+  "keywords": [
+    "MySQL",
+    "inquirer",
+    "node"
+  ],
+  "author": "Diane Candler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dianecandler/HW12employeeTracker/issues"
+  },
+  "homepage": "https://github.com/dianecandler/HW12employeeTracker#readme"
+}
