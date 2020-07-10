@@ -47,6 +47,9 @@ function start () {
                 case 'Add department?':
                     addDepartment();
                     break;
+                case 'Add employee role?':
+                    addRole();
+                    break;
                 default:
                     connection.end();
             }
@@ -90,5 +93,31 @@ function addDepartment() {
 			viewDepartment();
 			start();
 		})
+	});
+}
+// use promise - with two parameters in funciton resolve or reject
+// throw query to db for dept ID and dept name if error, resolve with
+// 
+
+function departmentsInfo() {
+	return new Promise( function (resolve, reject){
+		connection.query('SELECT * FROM departments', function(err, data){
+			if (err) throw err;
+			resolve(data);
+		});
+	});
+}
+
+function addRole() {
+	departmentsInfo().then(function(data){
+		console.log(data);
+		let deptListNames = data.map(dept => dept.departmentName);
+
+		inquirer.prompt({
+			message:'Which department do you want to add?',
+			type: 'list',
+			name: 'deptName',
+			choices: deptListNames
+		});
 	});
 }
