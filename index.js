@@ -50,6 +50,7 @@ function start () {
 				case 'Add employee role?':
 					addRole();
 					break;
+					// add new employee function
 				default:
 					connection.end();
 			}
@@ -120,7 +121,7 @@ function departmentsInfo () {
 
 function addRole () {
 	departmentsInfo().then(function (data) {
-		console.log(data);
+		//console.log(data);
 		let deptListNames = data.map((dept) => dept.departmentID);
 
 		inquirer.prompt([
@@ -149,3 +150,10 @@ function addRole () {
 		});
 	});
 }
+
+
+// create a promise function that grab a data from roles table
+
+// create funciton addEmployee
+	// run promise fuction for roles
+		// then function 
