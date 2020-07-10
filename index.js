@@ -44,6 +44,9 @@ function start () {
                 case 'View employees?':
                     viewEmployees();
                     break;
+                case 'Add department?':
+                    addDepartment();
+                    break;
                 default:
                     connection.end();
             }
@@ -72,5 +75,20 @@ function viewEmployees() {
 		if (err) throw err;
 		console.table(data);
 		start();
+	});
+}
+
+function addDepartment() {
+	inquirer.prompt({
+		message: 'What department do you want to add?',
+		type: 'input',
+		name: 'departmentName'
+	}).then(function(res){
+		console.log(res.departmentName);
+		connection.query(`INSERT INTO employeetracker.departments (departmentName) VALUES ('${res.departmentName}')`, function(err){
+			if (err) throw err;
+			viewDepartment();
+			start();
+		})
 	});
 }
