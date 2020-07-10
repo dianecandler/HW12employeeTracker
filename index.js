@@ -38,7 +38,7 @@ function start () {
                 case 'View departments?':
                     viewDepartment();
                     break;
-                case 'View roles?':
+                case 'View employee roles?':
                     viewRoles();
                     break;
                 case 'View employees?':
@@ -54,6 +54,23 @@ function start () {
 function viewDepartment() {
     connection.query('SELECT * FROM departments', function(err, data){
         if (err) throw err;
-        console.table(data);
+		console.table(data);
+		start();
     });
+}
+// order by can be changed to depart or roles title and salary
+function viewRoles() {
+	connection.query('SELECT roleTitle, roleSalary, departments.departmentName FROM employeetracker.roles LEFT JOIN employeetracker.departments ON roles.departmentID = departments.departmentID ORDER BY roles.roleSalary', function(err, data){
+		if (err) throw err;
+		console.table(data);
+		start();
+	});
+}
+
+function viewEmployees() {
+	connection.query('SELECT employeeFirstName, employeeLastName, roleTitle, roleSalary, departments.departmentName FROM employeetracker.employees LEFT JOIN employeetracker.roles ON employees.roleID = roles.roleID LEFT JOIN employeetracker.departments ON roles.departmentID = departments.departmentID ORDER BY roles.roleTitle', function(err, data){
+		if (err) throw err;
+		console.table(data);
+		start();
+	});
 }
