@@ -2,6 +2,8 @@ Homework 12 - MySQL:  Employee Tracker
 
 # Links
 https://github.com/dianecandler/HW12employeeTracker
+# Video
+https://pro.panopto.com/Panopto/Pages/Viewer.aspx?tid=024cd4d8-725f-4bed-b309-abfa0163074a
 
 README PROVIDED BELOW
 # Unit 12 MySQL Homework: Employee Tracker
