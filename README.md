@@ -1,18 +1,18 @@
-Homework 12 - MySQL:  Employee Tracker
+# Employee Tracker
+:man::woman::man::man::older_woman::man::older_man::woman::boy::man::girl::woman::older_woman::boy:
+## *MySQL application by Diane Candler*
 
-# Links
-https://github.com/dianecandler/HW12employeeTracker
-# Video
-https://pro.panopto.com/Panopto/Pages/Viewer.aspx?tid=024cd4d8-725f-4bed-b309-abfa0163074a
+## Links
+* GitHub:  https://github.com/dianecandler/HW12employeeTracker
+* :movie_camera:  Video:  https://pro.panopto.com/Panopto/Pages/Viewer.aspx?tid=024cd4d8-725f-4bed-b309-abfa0163074a
 
-README PROVIDED BELOW
-# Unit 12 MySQL Homework: Employee Tracker
-
-Developers are often tasked with creating interfaces that make it easy for non-developers to view and interact with information stored in databases. Often these interfaces are known as **C**ontent **M**anagement **S**ystems. In this homework assignment, your challenge is to architect and build a solution for managing a company's employees using node, inquirer, and MySQL.
-
-## Instructions
-
-Design the following database schema containing three tables:
+# About this Application
+Developers are often tasked with creating interfaces that make it easy for non-developers to view and interact with information stored in databases. Often these interfaces are known as **C**ontent **M**anagement **S**ystems. I was challenged to architect and build a solution for managing a company's employees using node, inquirer, and MySQL.
+  * Built a command line application
+     * Add departments, roles, employees
+     * View departments, roles, employees
+     * Update employee roles
+  * Designed database schema using 3 tables
 
 ![Database Schema](Assets/schema.png)
 
@@ -36,25 +36,6 @@ Design the following database schema containing three tables:
   * **role_id** - INT to hold reference to role employee has
   * **manager_id** - INT to hold reference to another employee that manager of the current employee. This field may be null if the employee has no manager
   
-Build a command-line application that at a minimum allows the user to:
-
-  * Add departments, roles, employees
-
-  * View departments, roles, employees
-
-  * Update employee roles
-
-Bonus points if you're able to:
-
-  * Update employee managers
-
-  * View employees by manager
-
-  * Delete departments, roles, and employees
-
-  * View the total utilized budget of a department -- ie the combined salaries of all employees in that department
-
-We can frame this challenge as follows:
 
 ```
 As a business owner
