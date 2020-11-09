@@ -1,11 +1,11 @@
-# Employee Tracker
+# Employee Tracker 
 :man::woman::man::man::older_woman::man::older_man::woman::boy::man::girl::woman::older_woman::boy:
 
-## *MySQL application by Diane Candler*
+## *MySQL command line application by Diane Candler*
 
 ## Links
 * GitHub:  https://github.com/dianecandler/HW12employeeTracker
-* :movie_camera:  Video:  https://pro.panopto.com/Panopto/Pages/Viewer.aspx?tid=024cd4d8-725f-4bed-b309-abfa0163074a
+* :movie_camera:  **Video:  https://pro.panopto.com/Panopto/Pages/Viewer.aspx?tid=024cd4d8-725f-4bed-b309-abfa0163074a**
 
 # About this Application
 Developers are often tasked with creating interfaces that make it easy for non-developers to view and interact with information stored in databases. Often these interfaces are known as **C**ontent **M**anagement **S**ystems. I was challenged to architect and build a solution for managing a company's employees using node, inquirer, and MySQL.
