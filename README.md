@@ -1,5 +1,6 @@
 # Employee Tracker
 :man::woman::man::man::older_woman::man::older_man::woman::boy::man::girl::woman::older_woman::boy:
+
 ## *MySQL application by Diane Candler*
 
 ## Links
@@ -43,14 +44,12 @@ I want to be able to view and manage the departments, roles, and employees in my
 So that I can organize and plan my business
 ```
 
+##  Under the Hood
+* Used [MySQL](https://www.npmjs.com/package/mysql) NPM package to connect to your MySQL database and perform queries.
 
-* Use the [MySQL](https://www.npmjs.com/package/mysql) NPM package to connect to your MySQL database and perform queries.
+* Used [InquirerJs](https://www.npmjs.com/package/inquirer/v/0.2.3) NPM package to interact with the user via the command-line.
 
-* Use [InquirerJs](https://www.npmjs.com/package/inquirer/v/0.2.3) NPM package to interact with the user via the command-line.
-
-* Use [console.table](https://www.npmjs.com/package/console.table) to print MySQL rows to the console. There is a built-in version of `console.table`, but the NPM package formats the data a little better for our purposes.
-
-* You may wish to have a separate file containing functions for performing specific SQL queries you'll need to use. Could a constructor function or a class be helpful for organizing these?
+* Used [console.table](https://www.npmjs.com/package/console.table) to print MySQL rows to the console. Note:  *There is a built-in version of `console.table`, but the NPM package formats the data a little better for our purposes.*
 
 * Used a variety of SQL JOINS to complete this assignment.
 
